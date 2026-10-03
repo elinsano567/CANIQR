@@ -1,3 +1,18 @@
 [build]
   publish = "."
   functions = "netlify/functions"
+
+[[redirects]]
+  from = "/api/crear-mascota"
+  to = "/.netlify/functions/crear-mascota"
+  status = 200
+
+[[redirects]]
+  from = "/api/obtener-mascota"
+  to = "/.netlify/functions/obtener-mascota"
+  status = 200
+
+[[redirects]]
+  from = "/api/foto-mascota"
+  to = "/.netlify/functions/foto-mascota"
+  status = 200
