@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mascota | CANQR</title><link rel="stylesheet" href="styles.css"></head>
+<body><header class="topbar"><a class="brand" href="index.html">🐾 CANQR</a></header>
+<main class="container narrow"><section class="card pet-card">
+<div id="loading" class="center">Cargando información...</div>
+<div id="content" hidden>
+<div class="pet-photo-wrap"><img id="petPhoto" class="pet-photo" alt="Foto de la mascota"></div>
+<div class="badge">🐾 CANQR</div><h1 id="petName"></h1><p id="petBasic" class="muted"></p>
+<div class="info-list">
+<div><strong>Especie:</strong> <span id="species"></span></div>
+<div><strong>Raza:</strong> <span id="breed"></span></div><div><strong>Edad:</strong> <span id="age"></span></div>
+<div><strong>Color:</strong> <span id="color"></span></div><div><strong>Dueño:</strong> <span id="owner"></span></div>
+<div><strong>Ciudad:</strong> <span id="city"></span></div></div>
+<div class="actions"><a id="callBtn" class="button primary">📞 Llamar</a>
+<a id="whatsappBtn" class="button whatsapp" target="_blank" rel="noopener">💬 WhatsApp</a></div>
+<div id="newBox" class="success-box" hidden><h2>🎉 ¡Página creada!</h2><p>Guarda esta dirección y descarga el QR.</p></div>
+<section class="qr-section"><h2>QR de la mascota</h2><div id="qrcode"></div>
+<button id="downloadQR" class="button secondary">⬇️ Descargar QR</button></section>
+</div><div id="error" class="center error" hidden></div>
+</section></main><footer>© 2026 CANQR</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script src="mascota.js"></script></body></html>

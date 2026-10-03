@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Registrar mascota | CANQR</title><link rel="stylesheet" href="styles.css"></head>
+<body><header class="topbar"><a class="brand" href="index.html">🐾 CANQR</a></header>
+<main class="container narrow"><section class="card"><h1>Registrar mi mascota</h1>
+<p class="muted">Completa los datos y CANQR creará automáticamente su página y QR.</p>
+<form id="petForm">
+<label>Nombre de la mascota *<input name="name" required maxlength="60" placeholder="Ej. Simba"></label>
+<div class="grid-2">
+<label>Especie *<input name="species" required maxlength="40" placeholder="Ej. Perro"></label>
+<label>Raza<input name="breed" maxlength="60" placeholder="Ej. Lhasa Apso"></label></div>
+<div class="grid-2">
+<label>Edad<input name="age" maxlength="30" placeholder="Ej. 2 años"></label>
+<label>Color<input name="color" maxlength="60" placeholder="Ej. Negro con blanco"></label></div>
+<label>Nombre del dueño *<input name="owner" required maxlength="80" placeholder="Ej. Valeria"></label>
+<label>Teléfono / WhatsApp *<input name="phone" required maxlength="30" placeholder="Ej. +593 97 899 1629"></label>
+<label>Ciudad<input name="city" maxlength="60" placeholder="Ej. Guayaquil"></label>
+<label>Foto de la mascota<input id="photo" name="photo" type="file" accept="image/jpeg,image/png,image/webp"><small>Máximo 2 MB. JPG, PNG o WEBP.</small></label>
+<div class="hp"><label>No completar<input name="website" tabindex="-1" autocomplete="off"></label></div>
+<button class="button primary full" id="submitBtn" type="submit">Crear página de mi mascota</button>
+<p id="status" class="status"></p></form></section></main><footer>© 2026 CANQR</footer>
+<script src="registrar.js"></script></body></html>
