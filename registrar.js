@@ -10,7 +10,7 @@ form.addEventListener("submit",async e=>{
  if(photo && !["image/jpeg","image/png","image/webp"].includes(photo.type)){statusBox.textContent="Formato de foto no permitido.";statusBox.classList.add("error");return;}
  submitBtn.disabled=true; submitBtn.textContent="Creando página...";
  try{
-  const r=await fetch("/api/crear-mascota",{method:"POST",body:new FormData(form)});
+  const r=await fetch("/.netlify/functions/crear-mascota", {method:"POST",body:new FormData(form)});
   const data=await r.json(); if(!r.ok) throw new Error(data.error||"No se pudo crear la página.");
   location.href="/mascota.html?id="+encodeURIComponent(data.id)+"&nuevo=1";
  }catch(err){statusBox.textContent=err.message;statusBox.classList.add("error");submitBtn.disabled=false;submitBtn.textContent="Crear página de mi mascota";}
